@@ -1,3 +1,27 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "custom-pricing-app"
+client_id = "8b5ff2868671808db6a12969dbf6bc1b"
+application_url = "https://paradise-bookmarks-whether-ordinary.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://paradise-bookmarks-whether-ordinary.trycloudflare.com/auth/callback",
+  "https://paradise-bookmarks-whether-ordinary.trycloudflare.com/auth/shopify/callback",
+  "https://paradise-bookmarks-whether-ordinary.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "duyen-ltb-training-store.myshopify.com"
